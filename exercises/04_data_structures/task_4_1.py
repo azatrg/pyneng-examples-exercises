@@ -15,4 +15,9 @@
 
 """
 
+from posixpath import split
+
+
 nat = "ip nat inside source list ACL interface FastEthernet0/1 overload"
+# Воспользовался методом replace и сразу вывел результат
+print(nat.replace('Fast', 'Gigabit'))

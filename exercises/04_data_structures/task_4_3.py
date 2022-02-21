@@ -22,3 +22,8 @@
 """
 
 config = "switchport trunk allowed vlan 1,3,10,20,30,100"
+# Сделал список из строки по разделителю и обратился к последнему элементу(строка из списка), записал результат в переменную.
+vlan_numbers = (config.split(' '))[-1]
+# Сделал еще один список сплитом.
+result = vlan_numbers.split(',')
+print(result)
