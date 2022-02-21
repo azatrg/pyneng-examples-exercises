@@ -16,3 +16,9 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+#Преобразую в список строк
+mac = mac.split(":")
+a = mac[0].lower()
+a = int(a,16)
+print(a)
+

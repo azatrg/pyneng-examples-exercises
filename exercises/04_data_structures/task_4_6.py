@@ -18,3 +18,18 @@ Outbound Interface    FastEthernet0/0
 """
 
 ospf_route = "      10.0.24.0/24 [110/41] via 10.0.13.3, 3d18h, FastEthernet0/0"
+# Обрежу пробелы слева в строке и разделю ее на список
+ospf_route_list = list(ospf_route.lstrip().split(' '))
+# Удалю лишнее слово
+
+prefix, metric, next_hop, last_update, out_intf = [ospf_route_list[0], ospf_route_list[1].strip('[]') ,ospf_route_list[3].rstrip(','),ospf_route_list[4].rstrip(','),ospf_route_list[5]]
+
+print(out_intf)
+print_template = '''
+Prefix                {}
+AD/Metric             {}
+Next-Hop              {}
+Last update           {}
+Outbound Interface    {}
+'''
+print(print_template.format(prefix, metric, next_hop, last_update, out_intf))
