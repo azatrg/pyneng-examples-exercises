@@ -14,3 +14,7 @@ IPython 7.18.1 -- An enhanced Interactive Python. Type '?' for help.
 In [1]:
 ```
 
+- [x] Поставил в виртуальном окружении через pip
+```
+pip install ipython
+```

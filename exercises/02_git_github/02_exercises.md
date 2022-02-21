@@ -9,6 +9,7 @@
 
 Создать свой репозиторий на основе шаблона [репозиторий с заданиями и примерами](https://github.com/natenka/pyneng-examples-exercises).
 
+- [x] - DONE
 > [Как создать репозиторий на основе шаблона](https://pyneng.readthedocs.io/ru/latest/book/02_git_github/git_github_changes.html).
 
 
